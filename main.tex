@@ -1,0 +1,27 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[czech]{babel}
+
+\input{include/format-maturitni-prace}
+\input{preambule}
+
+\begin{document} 
+\input{title}
+\maketitle
+\include{include/affidavit}
+\begin{abstract}
+	\input{abstrakt}
+\end{abstract}
+
+\tableofcontents
+
+\input{text}
+
+% zajistíme, aby \bibliography použil fancyhdr a poté necháme vygenerovat zdroje
+\fancypagestyle{plain}{}
+\renewcommand{\bibname}{Seznam použitých zdrojů}
+%\bibliographystyle{include/czplain}
+\bibliographystyle{unsrt}
+\bibliography{zdroje}
+
+\end{document}
