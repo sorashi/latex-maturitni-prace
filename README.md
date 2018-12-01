@@ -1,5 +1,7 @@
 Šablona pro psaní maturitní práce
 ===
+[![GitHub (pre-)release](https://img.shields.io/github/release-pre/sorashi/latex-maturitni-prace.svg)](https://github.com/Sorashi/latex-maturitni-prace/releases)
+
 
 Soubory:
 - `main.tex` – hlavní vstupní soubor pro kompilaci
