@@ -165,23 +165,23 @@ STRINGS { s t u }
 
 MACRO {jan} {"leden"}
 
-MACRO {feb} {"˙nor"}
+MACRO {feb} {"√∫nor"}
 
-MACRO {mar} {"b¯ezen"}
+MACRO {mar} {"b≈ôezen"}
 
 MACRO {apr} {"duben"}
 
-MACRO {may} {"kvÏten"}
+MACRO {may} {"kvƒõten"}
 
-MACRO {jun} {"Ëerven"}
+MACRO {jun} {"ƒçerven"}
 
-MACRO {jul} {"Ëervenec"}
+MACRO {jul} {"ƒçervenec"}
 
 MACRO {aug} {"srpen"}
 
-MACRO {sep} {"z·¯Ì"}
+MACRO {sep} {"z√°≈ô√≠"}
 
-MACRO {oct} {"¯Ìjen"}
+MACRO {oct} {"≈ô√≠jen"}
 
 MACRO {nov} {"listopad"}
 
@@ -814,8 +814,8 @@ FUNCTION {cz.name.format}
 % /** prepis pseudokodu do funkce pracujici s polem **/ 
 % string get.month.n (int n)
 % {
-%   int month = { 1 => "leden", "˙nor", "b¯ezen", "duben", "kvÏten", "Ëerven",
-%                "Ëervenec", "srpen", "z·¯Ì", "¯Ìjen", "listopad", "prosinec" };
+%   int month = { 1 => "leden", "√∫nor", "b≈ôezen", "duben", "kvƒõten", "ƒçerven",
+%                "ƒçervenec", "srpen", "z√°≈ô√≠", "≈ô√≠jen", "listopad", "prosinec" };
 %   if ( (n > 0) && (n < 13) )
 %   {
 %     return month[n];
@@ -829,23 +829,23 @@ FUNCTION {get.month.n}
 { duplicate$ #1 =
   { "leden" swap$ pop$ }
   { duplicate$ #2 =
-    { "˙nor" swap$ pop$ }
+    { "√∫nor" swap$ pop$ }
     { duplicate$ #3 =
-      { "b¯ezen" swap$ pop$ }
+      { "b≈ôezen" swap$ pop$ }
       { duplicate$ #4 =
         { "duben" swap$ pop$ }
         { duplicate$ #5 =
-          { "kvÏten" swap$ pop$ }
+          { "kvƒõten" swap$ pop$ }
           { duplicate$ #6 =
-            { "Ëerven" swap$ pop$ }
+            { "ƒçerven" swap$ pop$ }
             { duplicate$ #7 =
-              { "Ëervenec" swap$ pop$ }
+              { "ƒçervenec" swap$ pop$ }
               { duplicate$ #8 =
                 { "srpen" swap$ pop$ }
                 { duplicate$ #9 =
-                  { "z·¯Ì" swap$ pop$ }
+                  { "z√°≈ô√≠" swap$ pop$ }
                   { duplicate$ #10 =
-                    { "¯Ìjen" swap$ pop$ }
+                    { "≈ô√≠jen" swap$ pop$ }
                     { duplicate$ #11 =
                       { "listopad" swap$ pop$ }
                       { duplicate$ #12 =
@@ -881,8 +881,8 @@ FUNCTION {get.month.n}
 % /** prepis pseudokodu do funkce pracujici s polem **/ 
 % string get.month.n (int n)
 % {
-%   int month = { 1 => "ledna", "˙nora", "b¯ezna", "dubna", "kvÏtna", "Ëervna",
-%                "Ëervence", "srpna", "z·¯Ì", "¯Ìjna", "listopadu", "prosince"};
+%   int month = { 1 => "ledna", "√∫nora", "b≈ôezna", "dubna", "kvƒõtna", "ƒçervna",
+%                "ƒçervence", "srpna", "z√°≈ô√≠", "≈ô√≠jna", "listopadu", "prosince"};
 %   if ( (n > 0) && (n < 13) )
 %   {
 %     return month[n];
@@ -896,23 +896,23 @@ FUNCTION {get.month.g}
 { duplicate$ #1 =
   { "ledna" swap$ pop$ }
   { duplicate$ #2 =
-    { "˙nora" swap$ pop$ }
+    { "√∫nora" swap$ pop$ }
     { duplicate$ #3 =
-      { "b¯ezna" swap$ pop$ }
+      { "b≈ôezna" swap$ pop$ }
       { duplicate$ #4 =
         { "dubna" swap$ pop$ }
         { duplicate$ #5 =
-          { "kvÏtna" swap$ pop$ }
+          { "kvƒõtna" swap$ pop$ }
           { duplicate$ #6 =
-            { "Ëervna" swap$ pop$ }
+            { "ƒçervna" swap$ pop$ }
             { duplicate$ #7 =
-              { "Ëervence" swap$ pop$ }
+              { "ƒçervence" swap$ pop$ }
               { duplicate$ #8 =
                 { "srpna" swap$ pop$ }
                 { duplicate$ #9 =
-                  { "z·¯Ì" swap$ pop$ }
+                  { "z√°≈ô√≠" swap$ pop$ }
                   { duplicate$ #10 =
-                    { "¯Ìjna" swap$ pop$ }
+                    { "≈ô√≠jna" swap$ pop$ }
                     { duplicate$ #11 =
                       { "listopadu" swap$ pop$ }
                       { duplicate$ #12 =
@@ -1715,7 +1715,7 @@ FUNCTION {format.range}
 %       {
 %         if (is.ord(number))
 %         {
-%           return comma.connect(pop(), "Ë. " * number);
+%           return comma.connect(pop(), "ƒç. " * number);
 %         } else
 %         {
 %           return comma.connect(pop(), number);
@@ -1725,7 +1725,7 @@ FUNCTION {format.range}
 %     {
 %       if (is.ord(volume))
 %       {
-%         return comma.connect(pop(), "Ë. " * volume);
+%         return comma.connect(pop(), "ƒç. " * volume);
 %       } else
 %       {
 %         return comma.connect(pop(), volume);
@@ -1741,7 +1741,7 @@ FUNCTION {format.bvolume}
     { number empty$
       'skip$
       { number is.ord
-        { "Ë. " number * comma.connect }
+        { "ƒç. " number * comma.connect }
         { number comma.connect }
         if$
       }
@@ -1766,7 +1766,7 @@ FUNCTION {format.bvolume}
 %     return ""; 
 %   } else
 %   {
-%     return tie.or.connect(opt.url(), "\url{"DostupnÈ na: <" * url * ">.}");
+%     return tie.or.connect(opt.url(), "\url{"Dostupn√© na: <" * url * ">.}");
 %   }
 % }
 FUNCTION {format.url}
@@ -1850,7 +1850,7 @@ FUNCTION {format.pages}
 %   {
 %     if (is.ord(volume))
 %     {
-%       s = comma.connect(s, "roË.~" * volume);
+%       s = comma.connect(s, "roƒç.~" * volume);
 %     } else
 %     {
 %       s = comma.connect(s, volume);
@@ -1863,7 +1863,7 @@ FUNCTION {format.pages}
 %   {
 %     if (is.ord(number))
 %     {
-%       s = comma.connect(s, "Ë.~" * number);
+%       s = comma.connect(s, "ƒç.~" * number);
 %     } else
 %     {
 %       s = comma.connect(s, number);
@@ -1886,7 +1886,7 @@ FUNCTION {format.journal.issue}
   volume empty$
   'skip$
   { volume is.ord
-    { "roË.~" volume *
+    { "roƒç.~" volume *
       s swap$ comma.connect 's :=
     }
     { s volume comma.connect 's := }
@@ -1896,7 +1896,7 @@ FUNCTION {format.journal.issue}
   number empty$
   { "empty number in " cite$ * warning$ }
   { number is.ord
-    { "Ë.~" number *
+    { "ƒç.~" number *
       s swap$ comma.connect 's :=
     }
     { s number comma.connect 's := }
@@ -2125,7 +2125,7 @@ FUNCTION {format.thesis.info}
 %   {
 %     if (is.ord(inserts))
 %     {
-%       return comma.connect(format.range(), inserts * " p¯Ìl.");
+%       return comma.connect(format.range(), inserts * " p≈ô√≠l.");
 %     } else
 %     {
 %       return comma.connect(format.range(), inserts);
@@ -2141,7 +2141,7 @@ FUNCTION {format.thesis.range}
   { "" }
   { inserts empty$
     { s }
-    { s inserts opt.pages tie.or.connect " p¯Ìl." * comma.connect }
+    { s inserts opt.pages tie.or.connect " p≈ô√≠l." * comma.connect }
     if$
   }
   if$
@@ -2606,10 +2606,10 @@ FUNCTION {thesis}
   new.block %% rozsah akademicke prace a jejich priloh (volitelne)
   type$ "l" change.case$
   duplicate$ "bachelorthesis" =
-  { pop$ "Bakal·¯sk· pr·ce" }
+  { pop$ "Bakal√°≈ôsk√° pr√°ce" }
   { "masterthesis" =
-    { "Diplomov· pr·ce" }
-    { "DisertaËnÌ pr·ce" }
+    { "Diplomov√° pr√°ce" }
+    { "Disertaƒçn√≠ pr√°ce" }
     if$
   }
   if$
@@ -2640,10 +2640,10 @@ FUNCTION {another.thesis}
   new.block %% titul (povinny)
   type$ "l" change.case$
   duplicate$ "bachelorthesis" =
-  { pop$ "Bakal·¯sk· pr·ce" }
+  { pop$ "Bakal√°≈ôsk√° pr√°ce" }
   { "masterthesis" =
-    { "Diplomov· pr·ce" }
-    { "DisertaËnÌ pr·ce" }
+    { "Diplomov√° pr√°ce" }
+    { "Disertaƒçn√≠ pr√°ce" }
     if$
   }
   if$
