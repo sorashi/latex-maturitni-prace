@@ -12,7 +12,7 @@ začátkem dokumentu (např. `\usepackage{}`)
 - `zdroje.bib` – seznam zdrojů citovatelných v textu práce
 
 Doporučený software:
-- distribuce LaTeXu: [TeX Live](https://www.tug.org/texlive/)
+- distribuce LaTeXu: [MiKTeX](https://miktex.org/download)
 - IDE/editor: [TeXstudio](https://www.texstudio.org/)
 - správce bibliografie (zdrojů): [JabRef](http://www.jabref.org/)
 
