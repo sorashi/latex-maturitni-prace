@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## Unreleased
+### Added
+- skript a informace o automatickém přidání pevných mezer za jednopísmenné předložky
+- skript a informace o převodu do formátu docx
+- skript na vysázení do pdf mimo IDE
 ### Fixed
 - titulní strana je nyní v Arialu
 
