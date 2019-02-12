@@ -6,6 +6,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 - abstrakt změněn na anotaci
 - upraveno prohlášení
+- první číslovaná strana už není strana 1, ale 5 (doporučuje se nahradit
+vlastním počtem, titulní strana se nepočítá)
+- přidáno poděkování
 
 ## [0.3] - 2018-12-22
 ### Fixed
