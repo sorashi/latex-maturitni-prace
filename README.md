@@ -6,10 +6,15 @@
 Soubory:
 - `main.tex` – hlavní vstupní soubor pro kompilaci
 - `title.tex` – obsahuje text titulní strany (název práce, jméno autora...)
+- `abstrakt.tex` – obsahuje text abstraktu (anotace)
+- `podekovani.tex` – obsahuje text poděkování
 - `preambule.tex` – sem lze vložit své příkazy, které je potřeba vykonat před
 začátkem dokumentu (např. `\usepackage{}`)
 - `text.tex` – vlastní text maturitní práce
 - `zdroje.bib` – seznam zdrojů citovatelných v textu práce
+- `prilohy.tex` – seznam příloh a vlastní přílohy
+- `pevne-mezery.bat` – viz [pevné mezery](#pevné-mezery)
+- `to-docx.bat` a `reference.docx` – viz [převod do docx](#převod-do-docx)
 
 Doporučený software:
 - distribuce LaTeXu: [MiKTeX](https://miktex.org/download)
