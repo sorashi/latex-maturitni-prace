@@ -30,8 +30,11 @@ Vlna.
 [Binárky zde](http://ftp.linux.cz/pub/tex/local/cstug/olsak/vlna/oldbin/)
 (doporučuji 32-bit)
 
-Spusťte `vlna32.exe -l -m -n text.tex`. To nahradí na správných místech běžné
-mezery pevnými a zároveň zazálohuje původní soubor jako `text.te~`.
+Stáhněte `vlna32.exe` do složky, kde se nachází soubor `pevne-mezery.bat` a `text.tex`. Spusťte soubor `pevne-mezery.bat`.
 
 Tento příkaz by se určitě dal nějakým způsobem zabudovat do kompilačního cyklu
 TeXstudia, ovšem teď mě tlačí čas, takže zbytek je TBA.
+
+## Převod do docx
+
+Protože pokyny nám zadávají povinnost odevzdat práci mj. ve formátu docx, *což je formát pro opice, co potřebují WYSIWYG, ale vyberou si Word, což je ten [nejméně](https://wordribbon.tips.net/T010837_Pictures_Move_on_their_Own.html) [spolehlivý](https://twitter.com/gossipgriii/status/713425874167537664) WYSIWYG editor na světě*, vytvořil jsem skript `to-docx.bat`. Stačí ho spustit jako admin v dané složce. Jako závislost k němu patří soubor `reference.docx`. Po spuštení uvidíte hromadu warningů, protože některou matematiku do Wordu převést nelze. Výsledek se zapíše do `main.docx`. Není to nic převratného a chce to hodně manuální úpravy, pokud chcete, aby byl prezentovatelný. Přeji mnoho zábavy. :disappointed::gun:
