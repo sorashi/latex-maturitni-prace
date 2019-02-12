@@ -12,7 +12,8 @@ Soubory:
 začátkem dokumentu (např. `\usepackage{}`)
 - `text.tex` – vlastní text maturitní práce
 - `zdroje.bib` – seznam zdrojů citovatelných v textu práce
-- `prilohy.tex` – seznam příloh a vlastní přílohy
+- `prilohy.tex` – seznam příloh a vlastní 
+- `typeset.bat` – příkaz na sestavení
 - `pevne-mezery.bat` – viz [pevné mezery](#pevné-mezery)
 - `to-docx.bat` a `reference.docx` – viz [převod do docx](#převod-do-docx)
 
