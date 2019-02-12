@@ -9,6 +9,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - první číslovaná strana už není strana 1, ale 5 (doporučuje se nahradit
 vlastním počtem, titulní strana se nepočítá)
 - přidáno poděkování
+- přidán seznam příloh a přílohy
 
 ## [0.3] - 2018-12-22
 ### Fixed
