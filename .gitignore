@@ -258,5 +258,8 @@ TSWLatexianTemp*
 # standalone packages
 *.sta
 
+### vlna
+*.te~
+
 ### vlastní výstup
 main.pdf
